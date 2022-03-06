@@ -1,0 +1,57 @@
+@import "_nullstyle";
+
+$primary-color: #ff7b47;
+$secondary-color-1: #0d5c63;
+$secondary-color-2: #17213c;
+
+$text-color: #252b42;
+$second-text-color: #737373;
+
+$dark-background-color: #252b42;
+$light-background-color: #ffffff;
+
+body {
+	font-family: Montserrat;
+	font-weight: 700;
+	background: #fafafa;
+}
+
+a:visited {
+	color: inherit;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-flow: column;
+}
+
+.--container {
+	max-width: 1076px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.--ibg {
+	position: relative;
+	img {
+		position: absolute;
+		object-fit: cover;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@import "_header";
+@import "_main";
+@import "_footer";
+@import "_media";
+
+.--is-active {
+	transform: translateY(0);
+
+	transition: all 0.5s ease-in-out;
+}
