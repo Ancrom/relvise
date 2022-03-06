@@ -21,11 +21,12 @@
 		}
 	}
 	.menu {
+		width: 100%;
 		&__list {
 			position: fixed;
 			top: 104px;
 			left: 0;
-			z-index: -100;
+			z-index: 99;
 			flex-flow: column;
 			align-items: center;
 			height: calc(100vh - 104px);
@@ -38,6 +39,7 @@
 			color: $second-text-color;
 			font-weight: 400;
 			font-size: 30px;
+			width: 100%;
 			&:not(:last-child) {
 				margin: 0;
 			}
@@ -48,8 +50,9 @@
 		&__link {
 			display: block;
 			width: 100%;
-			padding: 15px 50vw;
+			padding: 15px;
 			width: 100%;
+			text-align: center;
 		}
 	}
 }
