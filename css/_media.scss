@@ -1,5 +1,6 @@
 @media (max-width: 575px) {
 	.header {
+		position: fixed;
 		background: #f6f6f6;
 		&__container {
 			justify-content: space-between;
