@@ -145,6 +145,10 @@ a:visited {
   display: none;
 }
 
+.mobile-menu__link:active {
+  background: #bdddfc;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,10 +214,10 @@ a:visited {
     height: calc(100vh - 104px);
     width: 100%;
     background: #f6f6f6;
-    -webkit-transform: translateY(-500px);
-            transform: translateY(-500px);
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   .menu__item {
     color: #737373;
@@ -235,9 +239,9 @@ a:visited {
 }
 
 .--is-active {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

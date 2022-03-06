@@ -20,6 +20,11 @@
 }
 .mobile-menu {
 	display: none;
+	&__link {
+		&:active {
+			background: rgb(189, 221, 252);
+		}
+	}
 }
 .menu {
 	&__list {
