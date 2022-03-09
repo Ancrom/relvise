@@ -6,10 +6,11 @@
 
 .intro {
 	position: relative;
+	padding: 0 0 190px 0;
 	&__container {
 	}
 	&__body {
-		padding: 184px 0 191px 0;
+		padding: 184px 0 0 0;
 		max-width: 411px;
 	}
 	&__title {
@@ -49,7 +50,7 @@
 		cursor: pointer;
 		&:not(:last-child) {
 			margin: 0 10px 0 0;
-		};
+		}
 	}
 	&__button--opacity {
 		background: none;
@@ -64,5 +65,60 @@
 		top: 0;
 		left: 0;
 		object-fit: cover;
+	}
+}
+
+.advantages {
+	background: #fafafa;
+	position: relative;
+	&__container {
+	}
+	&__cards {
+		display: flex;
+		margin: 0 -15px;
+		position: relative;
+		z-index: 1;
+	}
+	&__card {
+	}
+	&__card-wrapper {
+		flex: 0 1 calc(100% / 3);
+		padding: 0 15px;
+	}
+}
+.advantage-card {
+	padding: 35px 40px;
+	margin: -110px 0 0 0;
+	background: #fff;
+	&__icon {
+		&:not(:last-child) {
+			margin: 0 0 10px 0;
+		}
+	}
+	&__title {
+		color: $text-color;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 133%;
+		letter-spacing: 0.1px;
+		&:not(:last-child) {
+			margin: 0 0 10px 0;
+		}
+		&--white {
+			color: #fff;
+		}
+	}
+	&__subtitle {
+		color: $second-text-color;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 143%;
+		letter-spacing: 0.2px;
+		&--white {
+			color: #fff;
+		}
+	}
+	&--bg {
+		background: $secondary-color-1;
 	}
 }

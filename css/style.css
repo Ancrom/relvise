@@ -176,10 +176,11 @@ a:visited {
 
 .intro {
   position: relative;
+  padding: 0 0 190px 0;
 }
 
 .intro__body {
-  padding: 184px 0 191px 0;
+  padding: 184px 0 0 0;
   max-width: 411px;
 }
 
@@ -250,6 +251,69 @@ a:visited {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.advantages {
+  background: #fafafa;
+  position: relative;
+}
+
+.advantages__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px;
+  position: relative;
+  z-index: 1;
+}
+
+.advantages__card-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(100% / 3);
+          flex: 0 1 calc(100% / 3);
+  padding: 0 15px;
+}
+
+.advantage-card {
+  padding: 35px 40px;
+  margin: -110px 0 0 0;
+  background: #fff;
+}
+
+.advantage-card__icon:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+
+.advantage-card__title {
+  color: #252b42;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+}
+
+.advantage-card__title:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+
+.advantage-card__title--white {
+  color: #fff;
+}
+
+.advantage-card__subtitle {
+  color: #737373;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.2px;
+}
+
+.advantage-card__subtitle--white {
+  color: #fff;
+}
+
+.advantage-card--bg {
+  background: #0d5c63;
 }
 
 @media (max-width: 575px) {
