@@ -64,6 +64,7 @@
 		background: #f6f6f6;
 		&__container {
 			justify-content: space-between;
+			min-height: 70px;
 		}
 		&__nav {
 			// display: none;
@@ -102,12 +103,12 @@
 		width: 100%;
 		&__list {
 			position: fixed;
-			top: 104px;
+			top: 70px;
 			left: 0;
 			z-index: 99;
 			flex-flow: column;
 			align-items: center;
-			height: calc(100vh - 104px);
+			height: calc(100vh - 70px);
 			width: 100%;
 			background: #f6f6f6;
 			transform: translateX(100%);
