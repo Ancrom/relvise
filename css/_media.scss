@@ -1,15 +1,20 @@
-@media (max-width: 1024px) {
+@media (max-width: 1034px) {
 	.--ibg {
 		opacity: 0.4;
 		img {
 			object-position: right;
 		}
 	}
+
 	.main {
 		&__intro-advantages {
 			padding: 0 0 80px 0;
 		}
+		&__wrapper-bg {
+			padding: 0;
+		}
 	}
+
 	.advantages {
 		&__cards {
 			flex-flow: row wrap;
@@ -25,6 +30,19 @@
 			}
 		}
 	}
+
+	.features {
+		&__body {
+			padding: 100px 0 60px 0;
+		}
+		&__cards {
+			flex-flow: row wrap;
+		}
+		&__card-wrapper {
+			flex: 0 1 50%;
+			margin: 0 0 30px 0;
+		}
+	}
 }
 @media (max-width: 767px) {
 	.main {
@@ -32,6 +50,7 @@
 			padding: 0;
 		}
 	}
+
 	.advantages {
 		&__card-wrapper {
 			flex: 0 1 100%;
@@ -53,12 +72,22 @@
 			margin: 0;
 		}
 	}
+
+	.header-main {
+		&__text {
+			br {
+				display: none;
+			}
+		}
+	}
+
 	.--ibg {
 		opacity: 0.4;
 		img {
 			object-position: center;
 		}
 	}
+
 	.mobile-menu {
 		display: flex;
 		align-items: center;
@@ -68,6 +97,7 @@
 			padding: 15px;
 		}
 	}
+
 	.menu {
 		width: 100%;
 		&__list {
@@ -103,6 +133,7 @@
 			text-align: center;
 		}
 	}
+
 	.intro {
 		&__body {
 			max-width: 100%;
@@ -127,6 +158,26 @@
 			&:not(:last-child) {
 				margin: 0 0 25px 0;
 			}
+		}
+	}
+
+	.features {
+		&__body {
+			background: #f6f6f6;
+		}
+		&__card-wrapper {
+			flex: 0 1 100%;
+			padding: 0 67px;
+		}
+	}
+}
+
+
+
+@media (max-width: 370px) {
+	.features {
+		&__card-wrapper {
+			padding: 0 30px;
 		}
 	}
 }
