@@ -703,6 +703,9 @@ a:visited {
             flex: 0 1 100%;
     padding: 0 67px;
   }
+  .advice__body {
+    background: #f3f3f3;
+  }
   .advice__card-wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;

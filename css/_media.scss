@@ -187,6 +187,9 @@
 	}
 
 	.advice {
+		&__body {
+			background: #f3f3f3;
+		}
 		&__card-wrapper {
 			flex: 0 1 100%;
 			padding: 0 67px;
