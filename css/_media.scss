@@ -1,17 +1,16 @@
 @media (max-width: 1034px) {
-	.--ibg {
-		opacity: 0.4;
-		img {
-			object-position: right;
-		}
-	}
-
 	.main {
 		&__intro-advantages {
 			padding: 0 0 80px 0;
 		}
 		&__wrapper-bg {
 			padding: 0;
+		}
+		&__image {
+			opacity: 0.4;
+			img {
+				object-position: right;
+			}
 		}
 	}
 
@@ -32,6 +31,9 @@
 	}
 
 	.features {
+		&__container {
+			background: #f3f3f3;
+		}
 		&__body {
 			padding: 100px 0 60px 0;
 		}
@@ -43,8 +45,11 @@
 			margin: 0 0 30px 0;
 		}
 	}
-	
+
 	.advice {
+		&__container {
+			background: #f3f3f3;
+		}
 		&__cards {
 			flex-flow: wrap;
 		}
@@ -54,6 +59,26 @@
 		}
 		&__body {
 			padding: 100px 0 106px 0;
+		}
+	}
+
+	.about {
+		&__body {
+			padding: 100px 0 214px 0;
+		}
+		&__wrapper {
+			flex-flow: column;
+		}
+		&__card {
+			align-self: auto;
+			&:not(:first-child) {
+				padding: 72px 0 0 0;
+			}
+			
+		}
+		&__video {
+			flex: 0 1 100%;
+			padding: 0 0 56.25% 0;
 		}
 	}
 }
@@ -96,10 +121,11 @@
 		}
 	}
 
-	.--ibg {
-		opacity: 0.4;
-		img {
-			object-position: center;
+	.main {
+		&__image {
+			img {
+				object-position: center;
+			}
 		}
 	}
 
@@ -188,7 +214,6 @@
 
 	.advice {
 		&__body {
-			background: #f3f3f3;
 		}
 		&__card-wrapper {
 			flex: 0 1 100%;
@@ -196,8 +221,6 @@
 		}
 	}
 }
-
-
 
 @media (max-width: 370px) {
 	.features {
