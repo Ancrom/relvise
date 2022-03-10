@@ -21,6 +21,8 @@
 	}
 	&__features {
 	}
+	&__advice {
+	}
 }
 
 .header-main {
@@ -223,5 +225,61 @@
 		font-size: 16px;
 		line-height: 24px;
 		letter-spacing: 0.1px;
+	}
+}
+
+.advice {
+	&__container {
+	}
+	&__body {
+		padding: 125px 0 80px 0;
+	}
+	&__header {
+	}
+	&__cards {
+		display: flex;
+		margin: 0 -15px;
+		padding: 45px 0 0 0;
+	}
+	&__card-wrapper {
+		flex: 0 1 25%;
+		padding: 0 15px;
+	}
+	&__card {
+	}
+}
+.advice-card {
+	background: #fff;
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	&__body {
+		padding: 30px;
+		flex: 1 1 auto;
+	}
+	&__link {
+		display: inline-block;
+		&:not(:last-child) {
+			margin: 0 0 15px 0;
+		}
+	}
+	&__title {
+		color: $text-color;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.1px;
+	}
+	&__text {
+		color: $second-text-color;
+		font-size: 14px;
+		line-height: 143%;
+		letter-spacing: 0.2px;
+		flex: 1 1 auto;
+	}
+	&__image {
+		display: block;
+		position: relative;
+		padding: 0 0 60% 0;
 	}
 }
