@@ -1,5 +1,5 @@
 /* =========== МЕЙН =============== */
-
+// !МЕЙН ==========================
 .main {
 	flex: 1 1 auto;
 	position: relative;
@@ -36,6 +36,7 @@
 	}
 }
 
+// !ХИДЕР =========================
 .header-main {
 	text-align: center;
 	&__title {
@@ -57,6 +58,7 @@
 	}
 }
 
+// !ИНТРО =========================
 .intro {
 	// position: relative;
 	padding: 0 0 80px 0;
@@ -122,6 +124,7 @@
 	}
 }
 
+// !АДВЕНТЕДЖ =====================
 .advantages {
 	// background: #fafafa;
 	position: relative;
@@ -179,6 +182,7 @@
 	}
 }
 
+// !ХЬЮЧЕРС ======================
 .features {
 	&__container {
 	}
@@ -239,6 +243,7 @@
 	}
 }
 
+// !ЭДВАЙС =======================
 .advice {
 	&__container {
 	}
@@ -295,6 +300,7 @@
 	}
 }
 
+// !ЭБАУТ ========================
 .about {
 	background: #fff;
 	&__container {
@@ -383,6 +389,7 @@
 	}
 }
 
+// !КЛИЕНТС ======================
 .clients {
 	&__container {
 	}
@@ -402,15 +409,17 @@
 	}
 }
 
+// !САБСКРАЙБ ====================
 .subscribe {
 	position: relative;
-	&::after {
+	margin: 0 0 20px 0;
+	&::before {
 		content: "";
 		position: absolute;
 		bottom: -20px;
 		left: 0;
 		background: #252b42;
-		width: 100vw;
+		width: 100%;
 		height: 77px;
 		z-index: -1;
 	}
@@ -422,7 +431,7 @@
 		align-items: center;
 		padding: 30px 50px;
 		margin: 0 32px 20px 32px;
-		background: #252b42;;
+		background: #17213C;
 	}
 	&__title {
 		color: #fff;
@@ -439,15 +448,20 @@
 	}
 	&__input {
 		flex: 1 1 auto;
+		width: 100%;
 		color: $second-text-color;
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 200%;
 		letter-spacing: 0.2px;
+		background: #f9f9f9;
 		border: 1px solid #e6e6e6;
 		border-radius: 5px 0px 0px 5px;
 		min-height: 58px;
-		padding: 0 0 0 20px;
+		padding: 0 20px;
+		&:focus {
+			border: 1px solid #0a0000;
+		}
 	}
 	&__button {
 		display: flex;
@@ -464,5 +478,8 @@
 		border-radius: 0px 5px 5px 0px;
 		min-height: 58px;
 		padding: 0 22.5px;
+		&:focus {
+			border: 1px solid #0a0000;
+		}
 	}
 }

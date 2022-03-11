@@ -13,7 +13,6 @@
 			}
 		}
 	}
-
 	.advantages {
 		&__cards {
 			flex-flow: row wrap;
@@ -29,7 +28,6 @@
 			}
 		}
 	}
-
 	.features {
 		&__container {
 			background: #f3f3f3;
@@ -45,7 +43,6 @@
 			margin: 0 0 30px 0;
 		}
 	}
-
 	.advice {
 		&__container {
 			background: #f3f3f3;
@@ -61,7 +58,6 @@
 			padding: 100px 0 106px 0;
 		}
 	}
-
 	.about {
 		&__body {
 			padding: 100px 0 214px 0;
@@ -80,7 +76,6 @@
 			padding: 0 0 56.25% 0;
 		}
 	}
-
 	.subscribe {
 		&::after {
 			display: none;
@@ -97,13 +92,11 @@
 			padding: 0;
 		}
 	}
-
 	.advantages {
 		&__card-wrapper {
 			flex: 0 1 100%;
 		}
 	}
-
 	.subscribe {
 		&__body {
 			flex-flow: wrap;
@@ -118,7 +111,7 @@
 			}
 		}
 		&__form {
-			flex: 1 1 100%;
+			flex: 1 1 auto;
 		}
 	}
 }
@@ -138,7 +131,6 @@
 			margin: 0;
 		}
 	}
-
 	.header-main {
 		&__text {
 			br {
@@ -146,7 +138,6 @@
 			}
 		}
 	}
-
 	.main {
 		&__image {
 			img {
@@ -154,7 +145,6 @@
 			}
 		}
 	}
-
 	.mobile-menu {
 		display: flex;
 		align-items: center;
@@ -164,7 +154,6 @@
 			padding: 15px;
 		}
 	}
-
 	.menu {
 		width: 100%;
 		&__list {
@@ -200,7 +189,6 @@
 			text-align: center;
 		}
 	}
-
 	.intro {
 		&__body {
 			max-width: 100%;
@@ -227,7 +215,6 @@
 			}
 		}
 	}
-
 	.features {
 		&__body {
 			background: #f3f3f3;
@@ -237,7 +224,6 @@
 			padding: 0 67px;
 		}
 	}
-
 	.advice {
 		&__body {
 		}
@@ -246,7 +232,6 @@
 			padding: 0 67px;
 		}
 	}
-
 	.clients {
 		&__body {
 			padding: 80px 0 85px 0;
@@ -260,7 +245,6 @@
 			}
 		}
 	}
-
 	.subscribe {
 		&__body {
 			padding: 30px 15px;
@@ -274,7 +258,6 @@
 			padding: 0 30px;
 		}
 	}
-
 	.advice {
 		&__card-wrapper {
 			padding: 0 30px;
