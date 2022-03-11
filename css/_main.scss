@@ -375,3 +375,25 @@
 		letter-spacing: 0.2px;
 	}
 }
+
+.clients {
+	&__container {
+	}
+	&__body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row wrap;
+		padding: 50px 0;
+		margin: -15px;
+	}
+	&__image {
+		flex: 0 1 calc(100% / 6);
+		display: flex;
+		justify-content: center;
+		padding: 15px;
+	}
+}
+
+
+
