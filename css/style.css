@@ -848,7 +848,10 @@ a:visited {
             flex: 0 1 100%;
     padding: 0 0 56.25% 0;
   }
-  .subscribe::after {
+  .subscribe {
+    margin: 0;
+  }
+  .subscribe::before {
     display: none;
   }
   .subscribe__body {
@@ -1016,6 +1019,12 @@ a:visited {
   }
   .subscribe__body {
     padding: 30px 15px;
+  }
+  .subscribe__input {
+    padding: 0 15px;
+  }
+  .subscribe__button {
+    padding: 0 15px;
   }
 }
 
