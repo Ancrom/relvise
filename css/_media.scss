@@ -81,12 +81,12 @@
 		}
 	}
 
-	.clients {
-		&__body {
-			margin: -15px;
+	.subscribe {
+		&::after {
+			display: none;
 		}
-		&__image {
-			padding: 15px;
+		&__body {
+			margin: 0 -15px;
 		}
 	}
 }
@@ -101,6 +101,24 @@
 	.advantages {
 		&__card-wrapper {
 			flex: 0 1 100%;
+		}
+	}
+
+	.subscribe {
+		&__body {
+			flex-flow: wrap;
+			justify-content: center;
+			padding: 30px 50px;
+		}
+		&__title {
+			max-width: 100%;
+			text-align: center;
+			&:not(:last-child) {
+				margin: 0 0 30px 0;
+			}
+		}
+		&__form {
+			flex: 1 1 100%;
 		}
 	}
 }
@@ -240,6 +258,12 @@
 			&:not(:last-child) {
 				margin: 0 0 60px 0;
 			}
+		}
+	}
+
+	.subscribe {
+		&__body {
+			padding: 30px 15px;
 		}
 	}
 }
