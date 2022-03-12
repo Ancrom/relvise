@@ -803,6 +803,13 @@ body {
 
 .contact-card__email {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .contact-card__email:not(:last-child) {
@@ -859,7 +866,7 @@ body {
 
 .contact-card--blue {
   background: #252b42;
-  padding: 80px 15px;
+  padding: 80px 40px;
 }
 
 .contact-card--blue .contact-card__title, .contact-card--blue .contact-card__email-link {
@@ -975,6 +982,21 @@ body {
   }
   .subscribe__body {
     margin: 0 -15px;
+  }
+  .contact__cards {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 80%;
+            flex: 0 1 80%;
+  }
+  .contact-card:not(:last-child) {
+    margin: 0 0 30px 0;
   }
 }
 
@@ -1144,6 +1166,11 @@ body {
   }
   .subscribe__button {
     padding: 0 15px;
+  }
+  .contact-card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
 }
 

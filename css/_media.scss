@@ -85,6 +85,18 @@
 			margin: 0 -15px;
 		}
 	}
+	.contact {
+		&__cards {
+			flex-flow: wrap;
+			justify-content: center;
+		}
+	}
+	.contact-card {
+		flex: 0 1 80%;
+		&:not(:last-child) {
+			margin: 0 0 30px 0;
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -256,6 +268,9 @@
 		&__button {
 			padding: 0 15px;
 		}
+	}
+	.contact-card {
+		flex: 1 1 100%;
 	}
 }
 

@@ -522,6 +522,8 @@
 	}
 	&__email {
 		text-align: center;
+		display: flex;
+		flex-flow: column;
 		&:not(:last-child) {
 			margin: 0 0 15px 0;
 		}
@@ -565,7 +567,7 @@
 	}
 	&--blue {
 		background: $dark-background-color;
-		padding: 80px 15px;
+		padding: 80px 40px;
 		.contact-card {
 			&__title, 
 			&__email-link {
