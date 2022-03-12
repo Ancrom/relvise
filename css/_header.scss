@@ -31,7 +31,6 @@
 		display: flex;
 	}
 	&__item {
-		color: $text-color;
 		font-weight: 600;
 		font-size: 14px;
 		line-height: 171%;
@@ -39,5 +38,8 @@
 		&:not(:last-child) {
 			margin: 0 21px 0 0;
 		}
+	}
+	&__link {
+		color: $text-color;
 	}
 }
