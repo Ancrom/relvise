@@ -107,6 +107,9 @@
 		color: #fff;
 		border-radius: 37px;
 		cursor: pointer;
+		&:hover {
+			background: $secondary-color-2;
+		}
 		&:not(:last-child) {
 			margin: 0 10px 0 0;
 		}
@@ -115,6 +118,9 @@
 		background: none;
 		border: 1px solid #0d5c63;
 		color: #0d5c63;
+		&:hover {
+			color: #fff;
+		}
 	}
 	&__image {
 		position: absolute;

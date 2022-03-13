@@ -47,6 +47,9 @@
 		min-height: 58px;
 		padding: 0 40px;
 		border-radius: 5px;
+		&:hover {
+			background: $secondary-color-2;
+		}
 	}
 }
 .bottom-footer {

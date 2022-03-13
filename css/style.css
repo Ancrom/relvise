@@ -166,6 +166,10 @@ body {
   color: #252b42;
 }
 
+.menu__link:hover {
+  color: #ff7b47;
+}
+
 /* =========== МЕЙН =============== */
 .main {
   -webkit-box-flex: 1;
@@ -281,6 +285,10 @@ body {
   cursor: pointer;
 }
 
+.intro__button:hover {
+  background: #17213c;
+}
+
 .intro__button:not(:last-child) {
   margin: 0 10px 0 0;
 }
@@ -289,6 +297,10 @@ body {
   background: none;
   border: 1px solid #0d5c63;
   color: #0d5c63;
+}
+
+.intro__button--opacity:hover {
+  color: #fff;
 }
 
 .intro__image {
@@ -944,6 +956,10 @@ body {
   min-height: 58px;
   padding: 0 40px;
   border-radius: 5px;
+}
+
+.top-footer__button:hover {
+  background: #17213c;
 }
 
 .bottom-footer {
