@@ -489,10 +489,17 @@ body {
 
 .advice-card__link {
   display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .advice-card__link:not(:last-child) {
   margin: 0 0 15px 0;
+}
+
+.advice-card__link:hover {
+  text-decoration: underline;
 }
 
 .advice-card__title {
@@ -882,6 +889,150 @@ body {
   border: 1px solid #ff7b47;
 }
 
+.top-footer__body {
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-footer__content:not(:last-child) {
+  margin: 0 20px 0 0;
+}
+
+.top-footer__title {
+  color: #252b42;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+}
+
+.top-footer__title:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+
+.top-footer__text {
+  color: #737373;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.2px;
+}
+
+.top-footer__button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background: #ff7b47;
+  color: #fff;
+  min-height: 58px;
+  padding: 0 40px;
+  border-radius: 5px;
+}
+
+.bottom-footer {
+  background: #17213c;
+  color: #fff;
+}
+
+.bottom-footer__body {
+  padding: 50px 0;
+}
+
+.bottom-footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottom-footer__item {
+  margin: 0 20px 0 0;
+}
+
+.footer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  min-width: 150px;
+}
+
+.footer-item__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-item__row:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+
+.footer-item__row img {
+  margin: 0 10px 0 0;
+}
+
+.footer-item__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+}
+
+.footer-item__title:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+
+.footer-item__text {
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.2px;
+}
+
+.footer-item__text:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+
+.footer-item__link {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.2px;
+}
+
+.footer-item__link:hover {
+  text-decoration: underline;
+}
+
+.footer-item__link:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+
 @media (max-width: 1034px) {
   .main__intro-advantages {
     padding: 0 0 80px 0;
@@ -997,6 +1148,22 @@ body {
   }
   .contact-card:not(:last-child) {
     margin: 0 0 30px 0;
+  }
+  .bottom-footer__content {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    padding: 0 50px;
+  }
+  .bottom-footer__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
+    margin: 0 0 30px 0;
+  }
+  .bottom-footer__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
   }
 }
 
@@ -1167,10 +1334,32 @@ body {
   .subscribe__button {
     padding: 0 15px;
   }
+  .contact__body {
+    padding: 75px 0 130px 0;
+  }
+  .contact__header:not(:last-child) {
+    margin: 0 0 60px 0;
+  }
   .contact-card {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
+  }
+  .top-footer__body {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    padding: 40px 55px;
+  }
+  .top-footer__content:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+  .bottom-footer__content {
+    padding: 0 50px;
+  }
+  .bottom-footer__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 }
 
