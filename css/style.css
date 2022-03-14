@@ -989,6 +989,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   min-width: 150px;
 }
 
@@ -1032,9 +1035,6 @@ body {
 
 .footer-item__link {
   display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   color: #fff;
   font-size: 14px;
   line-height: 171%;

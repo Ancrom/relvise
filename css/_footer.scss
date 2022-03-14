@@ -70,6 +70,7 @@
 .footer-item {
 	display: flex;
 	flex-flow: column;
+	align-items: flex-start;
 	min-width: 150px;
 	&__row {
 		display: flex;
@@ -100,7 +101,6 @@
 	}
 	&__link {
 		display: block;
-		width: fit-content;
 		color: #fff;
 		font-size: 14px;
 		line-height: 171%;
